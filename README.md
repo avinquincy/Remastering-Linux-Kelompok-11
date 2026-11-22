@@ -358,13 +358,3 @@ Contoh keluaran yang diharapkan:
 ```
 
 ---
-
-## Catatan Penting
-
-- **Jalankan berurutan.** Langkah 8 memakai file dari Langkah 2, dan Langkah 6 membutuhkan `ffmpeg` dari Langkah 3.
-- **Alamat IP SafeSearch** (`216.239.38.120` untuk Google, `204.79.197.220` untuk Bing) ditulis manual di `/etc/hosts`. Alamat ini bisa berubah sewaktu-waktu, jadi periksa ulang secara berkala.
-- **Blokir lewat `/etc/hosts`** hanya mencakup domain yang tertulis. Anak yang paham teknis masih bisa memakai domain lain atau VPN. Untuk keamanan lebih kuat, gabungkan dengan akun pengguna non-admin dan kebijakan browser.
-- **File `resolv.conf`** pada sistem Ubuntu/Mint biasanya berupa symlink. Karena Langkah 7.1 menggantinya dengan file biasa, pastikan konfigurasi `NetworkManager` (`dns=none`) tetap terpasang agar tidak ditimpa.
-- **Cadangan Plymouth** tersimpan sebagai `logo.png.bak` dan `watermark.png.bak` di folder temanya, sehingga tampilan asli bisa dipulihkan.
-- **Nama monitor** di `xfce4-desktop.xml` (`monitorVirtual1`, `monitoreDP-1`) bergantung pada perangkat. Tambahkan blok serupa untuk nama monitor lain (misalnya `monitorHDMI-1`) bila wallpaper tidak muncul.
-
